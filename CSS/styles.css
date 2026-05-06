@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+*{
+    font-size:11px;
+    font-family: "Catamaran", sans-serif;
+}
+#hero{
+    background-image: linear-gradient(darkblue, rgb(1, 208, 208));
+}
+#hero .heroPart1{
+    gap:20px;
+}
+#hero > .heroPart1 > .mediaIcons{
+    margin: 0 0 15px;
+}
+#hero > .heroPart1 > .mainHeroText{
+    font-family: "Dosis", sans-serif;
+    font-size: 35px;
+    margin:0 0 20px;
+}
+#hero > .heroPart1 > p{
+    margin: 20px 0 0;
+}
+#hero > .heroPart1 > .mainButtons{
+    margin: 25px 0 0;
+}
+.navbar-toggler:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+/* SERVICE SECTION */
+.smallServiceText{
+    font-family: "Dosis", sans-serif;
+}
+.mainServiceText{
+    font-family: "Dosis", sans-serif;
+    color: #404040;
+}
+/* COUNTER SECTION */
+.counter-section{
+    background-image: url(../IMG/img-tech/IMAGENS/contador.png);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height:160px;
+    position:absolute;
+    display: flex;
+    align-items:center;
+}
