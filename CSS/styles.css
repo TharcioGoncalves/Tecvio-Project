@@ -37,6 +37,13 @@
     font-family: "Dosis", sans-serif;
     color: #404040;
 }
+.progress-bar{
+    transition: width 1s ease !important;
+    background-color: #7b68ee !important;
+}
+.btn-progress{
+    background-color: #7b68ee !important;
+}
 /* COUNTER SECTION */
 .counter-section{
     background-image: url(../IMG/img-tech/IMAGENS/contador.png);
@@ -48,4 +55,32 @@
     position:absolute;
     display: flex;
     align-items:center;
+}
+/* HIRE SECTION */
+.hire-section{
+    background-image: url(../IMG/img-tech/IMAGENS/edificio.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* CONTACT SECTION */
+.contact-section{
+    background-image: url(../IMG/img-tech/IMAGENS/map-image.png);
+    background-position: right;
+    background-size:40%;
+    background-repeat:no-repeat;
+}
+.form-control:focus{
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #7b68ee;
+}
+
+/* FOOTER */
+footer{
+    background-image:url(../IMG/img-tech/IMAGENS/rodape.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
