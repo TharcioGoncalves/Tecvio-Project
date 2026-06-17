@@ -93,3 +93,28 @@ for (let i = 0; i < portfolio_buttons.length; i++) {
     })
 }
 
+const counters = document.querySelectorAll(".counter-section .container .contar");
+const container = document.querySelector(".counter-section");
+let activated = false;
+
+window.addEventListener("scroll", () => {
+    if(pageYOffset > container.offsetTop - container.offsetHeight - 200 && activated === false){
+        counters.forEach(counter => {
+            counter.innerText = 0;
+            let count = 0;
+
+            function updateCount(){
+                const target = parseInt(counter.dataset.valor);
+                if(count < target){
+                    count++;
+                    counter.innerText = count;
+                    setTimeout(updateCount,10);
+                }else{
+                    counter.innerText = target;
+                }
+            }
+            updateCount();
+            activated = true;
+        })
+    }
+})
