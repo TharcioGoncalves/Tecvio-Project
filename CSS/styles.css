@@ -1,86 +1,692 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
-*{
-    font-size:11px;
+
+* {
+    font-size: 11px;
     font-family: "Catamaran", sans-serif;
 }
-#hero{
+
+.navbar {
+    transition: position 1s ease-in-out;
+}
+
+.nav-background {
+    background-color: white;
+    color: #404040 !important;
+    box-shadow: .5px .5px 8px rgba(128, 128, 128, 0.486);
+}
+
+.mediaIcons .btn {
+    padding-top: 7px;
+    border: 1px solid rgba(213, 233, 239, 0.808) !important;
+    border-radius: 8px;
+}
+
+.mediaIcons .btn:hover {
+    background-color: #7b68ee;
+    color: white;
+    border: 1px solid #7b68ee !important;
+}
+
+.mediaIcons .facebook {
+    padding: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.mainButtons {
+    gap: 10px;
+}
+
+.mainButtons .btn {
+    font-weight: 700;
+
+}
+
+.mainButtons .btn-light {
+    color: #3e57d0;
+}
+
+.mainButtons .blue {
+    color: white;
+
+}
+
+.mainButtons .blue {
+    background-color: #3e57d0;
+}
+
+.hero {
     background-image: linear-gradient(darkblue, rgb(1, 208, 208));
+    z-index: 2;
+    padding-bottom: 60px;
 }
-#hero .heroPart1{
-    gap:20px;
+
+.hero .heroPart1 {
+    gap: 20px;
 }
-#hero > .heroPart1 > .mediaIcons{
+
+.hero>.heroPart1>.mediaIcons {
     margin: 0 0 15px;
 }
-#hero > .heroPart1 > .mainHeroText{
+
+.hero>.heroPart1>.mainHeroText {
     font-family: "Dosis", sans-serif;
     font-size: 35px;
-    margin:0 0 20px;
+    margin: 0 0 20px;
 }
-#hero > .heroPart1 > p{
+
+.hero>.heroPart1>p {
     margin: 20px 0 0;
 }
-#hero > .heroPart1 > .mainButtons{
+
+.hero>.heroPart1>.mainButtons {
     margin: 25px 0 0;
 }
-.navbar-toggler:focus{
+
+.navbar-toggler:focus {
     outline: none;
     border: none;
     box-shadow: none;
 }
+
+.dropdown-menu {
+    padding: 0;
+    overflow: hidden;
+    width: 160px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 7px;
+    font-weight: 700;
+    color: #404040;
+}
+
+.dropdown-item:hover {
+    color: white;
+    background-color: #7b68ee;
+}
+
+#particles-js {
+    pointer-events: none;
+    z-index: 1;
+}
+
 /* SERVICE SECTION */
-.smallServiceText{
+.smallServiceText {
     font-family: "Dosis", sans-serif;
 }
-.mainServiceText{
+
+.mainServiceText {
     font-family: "Dosis", sans-serif;
     color: #404040;
 }
-.progress-bar{
+
+.progress-bar {
     transition: width 1s ease !important;
     background-color: #7b68ee !important;
 }
-.btn-progress{
+
+.btn-progress {
     background-color: #7b68ee !important;
 }
+
+.groupcards .card img {
+    width: 35px !important;
+}
+
+.groupcards .card .card-title {
+    font-family: "Dosis", sans-serif !important;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.groupcards .card .card-text {
+    color: #5f5f5f;
+}
+
+.readMore {
+    font-weight: 700;
+    color: #7b68ee;
+}
+
+.readMore::before {
+    content: " \F138";
+    color: #7b68ee;
+    font-family: "bootstrap-icons" !important;
+    text-align: center;
+    transition: transform .5s ease-in-out;
+}
+
+.readMore {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.readMore:hover::before {
+    transform: translateX(4px);
+}
+
+.groupcards .card {
+    justify-content: space-between;
+    box-shadow: 3px 5px 10px rgba(189, 191, 193, 0.382);
+    transition: transform .5s ease-in-out;
+    background-color: white;
+}
+
+.groupcards .card img {
+    transition: transform .5s ease-in-out;
+}
+
+.groupcards .card:hover img {
+    transform: rotateY(180deg);
+}
+
+.groupcards .card:hover {
+    transform: translateY(-5px);
+}
+
+/* ABOUT SECTION */
+.about-text h6,
+.about-text h2 {
+    font-family: "Dosis", sans-serif !important;
+}
+
+.yearsExperience {
+    position: relative;
+    z-index: 1;
+}
+
+.yearsExperience h2,
+.yearsExperience h6 {
+    font-family: "Dosis", sans-serif !important;
+}
+
+.yearsExperience h2 {
+    color: #212529;
+    font-size: 40px;
+    font-weight: bold !important;
+}
+
+.progress-text h6,
+.progress-text p {
+    font-family: "Dosis", sans-serif !important;
+    font-weight: 600;
+}
+
+.btn-progress {
+    font-family: "Dosis", sans-serif !important;
+    padding: 8px 22px;
+}
+
 /* COUNTER SECTION */
-.counter-section{
+.counter-section {
     background-image: url(../IMG/img-tech/IMAGENS/contador.png);
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height:160px;
-    position:absolute;
+    height: 160px;
+    position: absolute;
     display: flex;
-    align-items:center;
+    align-items: center;
 }
+
 /* HIRE SECTION */
-.hire-section{
+.hire-section {
     background-image: url(../IMG/img-tech/IMAGENS/edificio.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.hire-section .buttons .btn1,
+.hire-section .buttons .btn2 {
+    font-weight: 600;
+}
+
+.hire-section .buttons .btn1 {
+    color: #fff !important;
+    background-color: #7b68ee !important;
+}
+
+.hire-section .buttons .btn2 {
+    color: #7b68ee !important;
+    background-color: #fff !important;
+}
+
+/* OVERVIEW SECTION */
+.overview h2,
+.overview h6 {
+    font-family: "Dosis", sans-serif !important;
+}
+
+.blocks li {
+    overflow: hidden;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+
+    span {
+        color: #404040;
+    }
+}
+
+.blocks li::after {
+    content: "";
+    background-color: #7b68ee;
+    width: 0;
+    height: 600px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    transition: width .4s ease-in-out;
+}
+
+.blocks li:hover::after {
+    width: 100%;
+}
+
+.blocks li:hover {
+    span {
+        color: white;
+    }
+}
+
+/* PORTFOLIO */
+.portfolio-buttons li:hover {
+    background-color: #7b68ee !important;
+    color: white;
+}
+
+.active {
+    background-color: #7b68ee !important;
+    color: white !important;
+}
+
+.portfolio h2,
+.portfolio h6 {
+    font-family: "Dosis", sans-serif !important;
+}
+
+/* TEAM SECTION */
+.team .card-body span {
+    color: #7b68ee !important;
+    font-weight: 500;
+
+}
+
+.image-container {
+    overflow: hidden;
+}
+
+.image-container img {
+    transition: transform .7s ease-in-out;
+}
+
+.incrise-image {
+    transform: scale(1.1);
+}
+
+.team .image-container {
+    position: relative;
+}
+
+.team .card-title {
+    font-family: "Dosis", sans-serif !important;
+}
+
+.card .team-media-icons {
+    position: relative;
+}
+
+.card .team-media-icons {
+    position: absolute !important;
+    background-color: rgba(14, 13, 13, 0.728);
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity .8s;
+}
+
+.card .team-media-icons:hover {
+    opacity: 1;
+}
+
+.card .team-media-icons a {
+    border: 1px solid white;
+    padding: 4px 8px;
+    border-radius: 7px;
+
+}
+
+.card .team-media-icons a:hover {
+    background-color: #7b68ee;
+    border-color: #7b68ee;
+}
+
+.card .team-media-icons .facebook {
+    padding: 5px 9px;
+}
+
+.card .team-media-icons a {
+    padding-top: 7px;
+}
+
+.card .team-media-icons a i {
+    padding-top: 3px;
+}
+
+/* BLOG SECTION */
+.blog-section .card {
+    height: 340px;
+    width: 230px;
+    text-align: left;
+}
+
+.blog-section .card .card-title h2 {
+    line-height: 20px !important;
+}
+
+.blog-section .card .card-title h2:hover {
+    color: #7b68ee !important;
+}
+
+.image-information ul li a {
+    color: #3e57d0 !important;
+    font-weight: 500 !important;
+}
+
+.blog-section .card .card-body .card-title h2 a {
+    font-family: "Dosis", sans-serif !important;
+}
+
+/* COUNTER SECTION */
+.counter-section {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+
+.counter-section h2 span,
+.counter-section h3 {
+    font-family: "Dosis", sans-serif !important;
+}
+
+/* TESTIMONIAL SECTION */
+.testimonial-section h2,
+.testimonial-section h6 {
+    font-family: "Dosis", sans-serif !important;
+}
+
+h2,
+h6 {
+    font-family: "Dosis", sans-serif !important;
+}
+
 /* CONTACT SECTION */
-.contact-section{
+.contact-section {
     background-image: url(../IMG/img-tech/IMAGENS/map-image.png);
     background-position: right;
-    background-size:40%;
-    background-repeat:no-repeat;
+    background-size: 40%;
+    background-repeat: no-repeat;
 }
-.form-control:focus{
+
+.form-control:focus {
     outline: none;
     box-shadow: none;
     border: 1px solid #7b68ee;
 }
 
 /* FOOTER */
-footer{
-    background-image:url(../IMG/img-tech/IMAGENS/rodape.png);
+footer {
+    background-image: url(../IMG/img-tech/IMAGENS/rodape.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
 
+footer .input-group input {
+    padding: 8px 20px !important;
+    color: #5f5f5f !important;
+}
+
+footer .input-group button {
+    background-color: #7b68ee !important;
+    padding: 8px !important;
+}
+
+footer .input-group button:hover {
+    background-color: orange !important;
+}
+
+/* EFEITO RIPPLE */
+.btn1,
+.btn2 {
+    position: relative;
+    overflow: hidden;
+    border: none;
+}
+
+.btn1::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    top: var(--eixoY);
+    left: var(--eixoX);
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: height 5s, width 5s !important;
+    background-color: #3e57d0;
+}
+
+.btn1:hover::before {
+    width: 10000px;
+    height: 10000px;
+    transition: height 10s, width 10s !important;
+}
+
+.btn1:hover {
+    color: #fff !important;
+    z-index: 2;
+}
+
+.btn span {
+    position: relative;
+    z-index: 2 !important;
+}
+
+.btn2::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    top: var(--eixoY);
+    left: var(--eixoX);
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: height 5s, width 5s !important;
+    background-color: #fff;
+}
+
+.btn2:hover::before {
+    width: 10000px;
+    height: 10000px;
+    transition: height 10s, width 10s !important;
+}
+
+.btn2:hover {
+    color: #3e57d0 !important;
+    z-index: 2;
+}
+
+.btn-progress {
+    position: relative;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.btn-progress::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    top: var(--eixoY);
+    left: var(--eixoX);
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: height 5s, width 5s !important;
+    background-color: #3e57d0;
+}
+
+.btn-progress:hover::before {
+    width: 10000px;
+    height: 10000px;
+    transition: height 10s, width 10s !important;
+}
+
+.btn-progress:hover {
+    z-index: 2;
+}
+
+.hire-section .buttons .btn1,
+.hire-section .buttons .btn2 {
+    position: relative;
+    overflow: hidden;
+    font-weight: 600;
+}
+
+.hire-section .buttons .btn2::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    top: var(--eixoY);
+    left: var(--eixoX);
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: height 5s, width 5s !important;
+    background-color: #7b68ee;
+}
+
+.hire-section .buttons .btn2:hover::before {
+    width: 10000px;
+    height: 10000px;
+    transition: height 10s, width 10s !important;
+}
+
+.hire-section .buttons .btn2:hover span {
+    color: #fff;
+    z-index: 3;
+}
+
+.hire-section .buttons .btn1::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    top: var(--eixoY);
+    left: var(--eixoX);
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: height 5s, width 5s !important;
+    background-color: #fff;
+}
+
+.hire-section .buttons .btn1:hover::before {
+    width: 10000px;
+    height: 10000px;
+    transition: height 10s, width 10s !important;
+}
+
+.hire-section .buttons .btn1:hover span {
+    color: #7b68ee;
+    z-index: 3;
+}
+
+.contact-section .map-part .btn {
+    background-color: #7b68ee;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    padding: 10px 10px !important;
+}
+
+.contact-section .map-part .btn::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    top: var(--eixoY);
+    left: var(--eixoX);
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: height 5s, width 5s !important;
+    background-color: #3e57d0 !important;
+}
+
+.contact-section .map-part .btn:hover::before {
+    width: 10000px;
+    height: 10000px;
+    transition: height 10s, width 10s !important;
+}
+
+.contact-section .map-part .btn:hover {
+    z-index: 2;
+}
+
+/* EFEITO FILTRAGEM DA GALERIA */
+
+
+.expandir-imagem {
+    transform: scale(1) !important;
+    opacity: 1;
+    transition: all .3s linear;
+}
+
+.diminuir-imagem {
+    transform: scale(0) !important;
+    opacity: 0;
+    transition: all .3s linear;
+}
+
+footer {
+    font-family: "Dosis", sans-serif !important;
+}
+
+.card1,.card2,.card3{
+    min-width: 233px !important;
+    box-sizing: border-box;
+}
+.carrossel{
+    overflow: hidden;
+}
+.cards-group{
+    transition: tranform 0.6s ease-in-out;
+}
+@media (max-width:768px) {
+    .card1,.card2,.card3{
+        flex: 0 0 100%;
+    }
 }
