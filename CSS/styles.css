@@ -675,38 +675,58 @@ footer {
     font-family: "Dosis", sans-serif !important;
 }
 
-.card1,.card2,.card3{
+.card1,
+.card2,
+.card3 {
     min-width: 233px !important;
     box-sizing: border-box;
 }
-.carrossel{
+
+.carrossel {
     overflow: hidden;
 }
-.cards-group{
+
+.cards-group {
     transition: tranform 0.6s ease-in-out;
 }
+
 @media (max-width:768px) {
-    .card1,.card2,.card3{
+
+    .card1,
+    .card2,
+    .card3 {
         flex: 0 0 100%;
     }
 }
 
-.partnerSection .img-list{
+@media (min-width:768px) {
+    .mediaIcons {
+        justify-content: start !important;
+    }
+    .mainButtons{
+        justify-content: start !important;
+    }
+}
+
+.partnerSection .img-list {
     gap: 0.4px;
 }
-.partnerSection .img-container{
+
+.partnerSection .img-container {
     width: 130px !important;
 }
 
-.partnerSection div img{
+.partnerSection div img {
     border-radius: 7px;
     border: 1px solid rgb(160, 159, 159) !important;
     min-width: 100px;
-    padding:5px;
+    padding: 5px;
 }
-.counter-section{
+
+.counter-section {
     overflow: hidden;
 }
-.hire-section{
+
+.hire-section {
     padding: 0 !important;
 }
