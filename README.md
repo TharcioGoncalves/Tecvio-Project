@@ -1,2 +1,2 @@
 # Tecvio-Project
-Projecto Techvio
+Projecto Techvio - Project focado no desenvolvimentos e melhoria dos meus conhecimentos sobre animações
