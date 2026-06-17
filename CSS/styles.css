@@ -690,3 +690,23 @@ footer {
         flex: 0 0 100%;
     }
 }
+
+.partnerSection .img-list{
+    gap: 0.4px;
+}
+.partnerSection .img-container{
+    width: 130px !important;
+}
+
+.partnerSection div img{
+    border-radius: 7px;
+    border: 1px solid rgb(160, 159, 159) !important;
+    min-width: 100px;
+    padding:5px;
+}
+.counter-section{
+    overflow: hidden;
+}
+.hire-section{
+    padding: 0 !important;
+}
